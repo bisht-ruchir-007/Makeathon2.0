@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Stock</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Karla|Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <div class="row">
+                <div class='col-md-6 offset-md-3 col-sm-12'><br><br><br>
+                    <form action="/stocks" method="POST">
+                        <h1 class="text-center">Add Stock</h1><br><br>
+                        {{#if messages.successMessage}}
+                        <div class="successMessage btn-primary">
+                            {{messages.successMessage}}
+                        </div>
+                        <br>
+                        {{/if}}
+                        <br><br>
+                        <input type="text" name="id" placeholder="Enter id" class="form-control"><br><br>
+                        <input type="text" name="name" placeholder="Enter name" class="form-control"><br><br>
+                        <input type="text" name="batch" placeholder="Enter batch name" class="form-control"><br><br>
+                        <input type="text" name="expMonth" placeholder="Enter expMonth" class="form-control"><br><br>
+                        <input type="text" name="expYear" placeholder="Enter expYear" class="form-control"><br><br>
+                        <input type="text" name="Qty" placeholder="Enter Qty" class="form-control"><br><br>
+                        <input type="text" name="thres" placeholder="Enter threshold" class="form-control"><br><br>
+                        <button type="submit" class="btn btn-success">ADD TO STOCKS</button>
+                    </form>
+                    <a href="/adminlogin"><button class="btn btn-warning">BACK TO DASHBOARD</button></a>
+                </div>
+            </div>
+        </div>
+    </center>
+
+</body>
+
+</html>

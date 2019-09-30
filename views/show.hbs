@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Show</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Karla|Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="home.css">
+
+
+</head>
+
+<body>
+    <h1 class="text-center"><u>Existing Stock</u></h1><br><br>
+    <center>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <table>
+                        <tr>
+                            <th>&emsp;&emsp;<h2>ID</h2>
+                            </th>
+                            <th>&emsp;&emsp;<h2>Name</h2>
+                            </th>
+                            <th>&emsp;&emsp;<h2>Batch</h2>
+                            </th>
+                            <th>&emsp;&emsp;<h2>expMonth</h2>
+                            </th>
+                            <th>&emsp;&emsp;<h2>expYear</h2>
+                            </th>
+                            <th>&emsp;&emsp;<h2>Qty</h2>
+                            </th>
+                        </tr>
+                        {{#each el as |t|}}
+                        &emsp;&emsp;
+                        <tr>
+                            &emsp;&emsp;
+                            <td>{{t.id}}</td>
+                            <td>&emsp;&emsp;{{t.name}}</td>
+                            <td>&emsp;&emsp;{{t.batch}}</td>
+                            <td>&emsp;&emsp;
+                                {{t.expMonth}}</td>
+                            <td>&emsp;&emsp;{{t.expYear}}</td>
+                            <td>&emsp;&emsp;{{t.Qty}}</td>
+
+                        </tr>
+
+
+                        {{/each}}
+
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <a href="/adminlogin"><button class="btn btn-danger">BACK TO DASHBOARD</button></a>
+    </center>
+    {{!-- <h3 class="text-center" style="color: aquamarine">
+        ID&emsp;&emsp;&emsp;Name&emsp;&emsp;&emsp;Batch&emsp;&emsp;&emsp;Expiry
+        Month&emsp;&emsp;&emsp;Expiry
+        Year&emsp;Quantity</h3><br><br>
+    <h3 class="text-center">
+        {{#each el as |t|}}
+        {{t.id}}&emsp;&emsp;&emsp;&emsp;{{t.name}}&emsp;&emsp;&emsp;&emsp;{{t.batch}}&emsp;&emsp;&emsp;&emsp;{{t.expMonth}}&emsp;&emsp;&emsp;&emsp;{{t.expYear}}&emsp;&emsp;&emsp;&emsp;{{t.Qty}}
+        &emsp;&emsp;&emsp;&emsp;<br><br>
+        {{/each}}
+    </h3> --}}
+
+</body>
+
+</html>

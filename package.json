@@ -1,0 +1,29 @@
+{
+  "name": "exceljs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@tensorflow/tfjs": "^1.2.9",
+    "connect-ensure-login": "^0.1.1",
+    "dotenv": "^8.1.0",
+    "exceljs": "^2.0.1",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.16.2",
+    "hbs": "^4.0.4",
+    "knex": "^0.19.4",
+    "nodemailer": "^6.3.0",
+    "objection": "^1.6.9",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^5.18.4",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
